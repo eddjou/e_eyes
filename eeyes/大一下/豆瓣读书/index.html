@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书列表</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/flexible.js"></script>
+</head>
+<body id="root">
+	<header>豆瓣图书</header>
+	<div id="list"></div>
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="js/ejs.min.js"></script>
+  <script type="text/javascript">
+  	$(function() {
+  		var dburl = 'https://api.douban.com/v2/book/';
+  		$.ajax({
+  			url: dburl + "series/129/books",
+  			dataType: 'jsonp',// 跨域
+  			success: function(data){
+  				$.get('./tpls/list.tpl', function(tpl) {
+						var htmlData = ejs.render(tpl, data);
+						$('#list').html(htmlData);
+					})
+  			}
+  		});
+  	});
+  	// demo练习初步要求：点击某一项后跳转到详情页面（详情api为 https://api.douban.com/v2/book/:id，可以考虑跳转页面时在url后面附一个query string，然后使用js读取该id
+  </script>
+</body>
+</html>

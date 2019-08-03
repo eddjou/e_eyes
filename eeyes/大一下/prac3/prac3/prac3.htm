@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prac3</title>
+</head>
+<style type="text/css">
+	 *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+    }
+    .c-fix:after{
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+    #content{
+    	width: 370px;
+    	padding: 6px 8px 0 4px;
+    }
+    #column{
+    	height: 23px;
+    	border-bottom: 1px solid #d4d5d7;
+    	padding: 0 0 5px 8px;
+    }
+    #filminfo{
+    	float: left;
+    	color: #3776d3;
+    	font-size: 16px;
+    	width: 72px;
+    	border-right: 1px solid	#d4d5d7;
+    }
+    #entertaininfo{
+    	float: left;
+    	font-size: 16px;
+    	width: 72px;
+    	padding-left: 8px;
+    }
+    #bar{
+    	float: left;
+    	margin-top: 28px;
+    	margin-left: -160px;
+    	width: 80px;
+    	height: 3px;
+    	background-color: #3776d3;
+    }
+    #picshow{
+    	padding-top: 11px;
+    }
+    .picbox{
+    	float: left;
+    	width: 170px;
+    }
+    .padmodi{
+    	padding-right: 16px;
+    }
+    .pic{
+    	width: 170px;
+    	height: 97px;
+    }
+    .intro{
+    	color: #454545;
+    	padding-top: 6px;
+    	padding-bottom: 6px;
+    	font-size: 14px;
+    }
+    .word{
+    	color: #454545;
+    	font-size: 16px;
+    }
+    #pic1{
+    	background-image:url(./pic1.png);
+        background-repeat: no-repeat;
+    }
+    #pic2{
+    	background-image:url(./pic2.png);
+        background-repeat: no-repeat;
+    }
+    #pic3{
+    	background-image:url(./pic3.png);
+        background-repeat: no-repeat;
+    }
+    #pic4{
+    	background-image:url(./pic4.png);
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+	<div id="content">
+		<div id="column" class="c-fix">
+			<div id="filminfo">影视资讯</div>
+			<div id="entertaininfo">综艺劲爆</div>
+			<div id="bar"></div>
+		</div>
+		<div id="picshow" class="c-fix">
+			<div class="picbox padmodi">
+				<div class="pic" id="pic1"></div>
+				<div class="intro">
+					湖南卫视否认翻拍《星你》
+				</div>
+			</div>
+			<div class="picbox">
+				<div class="pic" id="pic2"></div>
+				<div class="intro">
+					章子怡晒新剧染发照片
+				</div>
+			</div>
+			<div class="picbox padmodi">
+				<div class="pic" id="pic3"></div>
+				<div class="intro">
+					吴君如与霆锋再续断背情
+				</div>
+			</div>
+			<div class="picbox">
+				<div class="pic" id="pic4"></div>
+				<div class="intro">
+					利菁金发站台电影首映
+				</div>
+			</div>
+		</div>
+		<div class="wordshow">
+			<div class="word">《锦绣缘》首播 黄晓明陈乔恩强吻胸咚接连上演</div>
+			<div class="word">王祖蓝新戏大尺度片段曝光 被女星掐胸到狂叫</div>
+		</div>
+		
+	</div>
+</body>

@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+	font-size: 12px;
+}
+#top{
+	height: 98px;
+	width: 1000px;
+	margin: 0 auto;
+}
+#nav{
+	background-color: #09ae09;
+	height: 44px;
+	width: 100%;
+}
+#nav li{
+	float: left;
+}
+#nav a{
+	display: block;
+	padding: 0 22px;
+	font: 16px/44px 'microsoft YaHei';
+	color: #fff;
+}
+#clear{
+	width: 1000px;
+	margin: 0 auto;
+}
+#content{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+#writer{
+	float: left;
+	width: 245px;
+	margin-right: 20px;
+	background-color: yellow;
+}
+#brand{
+	float: left;
+	position: relative;
+	width: 500px;
+	height: 182px;
+	background-color: pink;
+}
+#loginbox{
+	float: left;
+	position: relative;
+	width: 175px;
+	height: 142px;
+	padding: 20px;
+	margin-left: 20px;
+	background-color: blue;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+	vertical-align: top;
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-size: 14px;
+		}
+		.c-fix:after{
+    	content: "";
+    	display: table;
+    	clear: both;
+    }
+    	#modal{
+			background-color: rgba(0,0,100,0.1);
+			position: fixed;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			display: none;
+		}
+		#wrapper{
+			width: 300px;
+			height: 200px;
+			border:10px solid #ccc;
+			background-color: #fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -200px;
+			margin-top: -120px;
+		}
+		#intro{
+			display: inline-block;
+			font-size: 16px;
+		}
+		#button{
+			display: inline-block;
+			margin-left: 10px;
+			width: 65px;
+			height: 24px;
+			line-height: 24px;
+			text-align: center;
+			background-color: #ffff33;
+			color: #cccccc;
+		}
+		.argu{
+			height:24px;
+			width: 40px;
+			text-align: center;
+			line-height: 24px;
+			background-color: #ccc;
+			border: 2px solid #999;
+		}
+		.line{
+			margin: 12px 0;
+		}
+		.set{
+			height:24px;
+			width: 40px;
+			text-align: center;
+			line-height: 24px;
+			color: #fff;
+			background-color: #9933cc;
+		}
+		.settings{
+			margin: 0 30%;
+		}
+		#box{
+			margin: 8px;
+			height: 120px;
+			width: 120px;
+			border:4px solid #000;
+		}
+		.span{
+			display: inline-block;
+			margin: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div id="modal">
+		<div id="wrapper">
+			<div class="background line">
+				<p class="span">请选择背景色：</p>
+				<div id="red" class="span argu">红</div>
+				<div id="yellow" class="span argu">黄</div>
+				<div id="blue" class="span argu">蓝</div>
+			</div>
+			<div class="width line">
+				<p class="span">请选择宽（px）：</p>
+				<div id="w-px200" class="span argu">200</div>
+				<div id="w-px300" class="span argu">300</div>
+				<div id="w-px400" class="span argu">400</div>
+			</div>
+			<div class="height line">
+				<p class="span">请选择高（px）：</p>
+				<div id="h-px200" class="span argu">200</div>
+				<div id="h-px300" class="span argu">300</div>
+				<div id="h-px400" class="span argu">400</div>
+			</div>
+			<div class="settings line">			
+				<div id="recover" class="set span">恢复</div>
+				<div id="confirm" class="set span">确认</div>
+			</div>
+		</div>
+	</div>
+	<div id="intro">请为下面的DIV设置格式:</div>
+	<div id="button">
+		点击设置
+	</div>
+	<div id="box"> </div>
+</body>
+<script type="text/javascript">
+	var but=document.getElementById('button');
+	var mod=document.getElementById('modal');
+	var box=document.getElementById('box');
+	but.onmouseover=function(){
+		but.style.background = '#006633';
+	}
+	but.onmouseout=function(){
+		but.style.background = '#ffff33';
+	}
+	but.onclick=function(){
+		mod.style.display="block";
+	}
+	document.getElementById('red').onmouseover=function(){
+		document.getElementById('red').style.background="#3333cc";
+	}
+	document.getElementById('red').onmouseout=function(){
+		document.getElementById('red').style.background="#ccc";
+	}
+	document.getElementById('red').onclick=function(){
+		document.getElementById('red').style.background="#330099";
+		box.style.background="#ff0000";
+	}
+	document.getElementById('yellow').onmouseover=function(){
+		document.getElementById('yellow').style.background="#3333cc";
+	}
+	document.getElementById('yellow').onmouseout=function(){
+		document.getElementById('yellow').style.background="#ccc";
+	}
+	document.getElementById('yellow').onclick=function(){
+		document.getElementById('yellow').style.background="#330099";
+		box.style.background="#ffff00";
+	}
+	document.getElementById('blue').onmouseover=function(){
+		document.getElementById('blue').style.background="#3333cc";
+	}
+	document.getElementById('blue').onmouseout=function(){
+		document.getElementById('blue').style.background="#ccc";
+	}
+	document.getElementById('blue').onclick=function(){
+		document.getElementById('blue').style.background="#330099";
+		box.style.background="#0000ff";
+	}
+	document.getElementById('w-px200').onmouseover=function(){
+		document.getElementById('w-px200').style.background="#3333cc";
+	}
+	document.getElementById('w-px200').onmouseout=function(){
+		document.getElementById('w-px200').style.background="#ccc";
+	}
+	document.getElementById('w-px200').onclick=function(){
+		document.getElementById('w-px200').style.background="#330099";
+		box.style.width="200px";
+	}
+	document.getElementById('w-px300').onmouseover=function(){
+		document.getElementById('w-px300').style.background="#3333cc";
+	}
+	document.getElementById('w-px300').onmouseout=function(){
+		document.getElementById('w-px300').style.background="#ccc";
+	}
+	document.getElementById('w-px300').onclick=function(){
+		document.getElementById('w-px300').style.background="#330099";
+		box.style.width="300px";
+	}
+	document.getElementById('w-px400').onmouseover=function(){
+		document.getElementById('w-px400').style.background="#3333cc";
+	}
+	document.getElementById('w-px400').onmouseout=function(){
+		document.getElementById('w-px400').style.background="#ccc";
+	}
+	document.getElementById('w-px400').onclick=function(){
+		document.getElementById('w-px400').style.background="#330099";
+		box.style.width="400px";
+	}
+	document.getElementById('h-px200').onmouseover=function(){
+		document.getElementById('h-px200').style.background="#3333cc";
+	}
+	document.getElementById('h-px200').onmouseout=function(){
+		document.getElementById('h-px200').style.background="#ccc";
+	}
+	document.getElementById('h-px200').onclick=function(){
+		document.getElementById('h-px200').style.background="#330099";
+		box.style.height="200px";
+	}
+	document.getElementById('h-px300').onmouseover=function(){
+		document.getElementById('h-px300').style.background="#3333cc";
+	}
+	document.getElementById('h-px300').onmouseout=function(){
+		document.getElementById('h-px300').style.background="#ccc";
+	}
+	document.getElementById('h-px300').onclick=function(){
+		document.getElementById('h-px300').style.background="#330099";
+		box.style.height="300px";
+	}
+	document.getElementById('h-px400').onmouseover=function(){
+		document.getElementById('h-px400').style.background="#3333cc";
+	}
+	document.getElementById('h-px400').onmouseout=function(){
+		document.getElementById('h-px400').style.background="#ccc";
+	}
+	document.getElementById('h-px400').onclick=function(){
+		document.getElementById('h-px400').style.background="#330099";
+		box.style.height="400px";
+	}
+	document.getElementById('recover').onclick=function(){
+		box.style.background="#fff";
+		box.style.width="100px";
+		box.style.height="100px";
+	}
+	document.getElementById('confirm').onclick=function(){
+		modal.style.display="none";
+	}
+</script>
+</html>
