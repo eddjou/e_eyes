@@ -1,0 +1,3 @@
+[ 2017-03-20T23:11:30+08:00 ] 127.0.0.1 /
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'athleticAdmin'@'localhost' (using password: YES)
+

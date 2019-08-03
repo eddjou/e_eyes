@@ -1,0 +1,217 @@
+* {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Microsoft YaHei","PingFang SC","Hiragino Sans GB","STHeiti";
+    }
+    .c-fix:after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .title{
+        font-size: 0.5625rem;
+        color: #fff;
+        height: 1.1875rem;
+        line-height: 1.1875rem;
+        text-align: center;
+        background-color: rgba(11,11,11,.6);
+    }
+    .content{
+        background-color: rgba(0,0,0,.4);
+        border: 0.03125rem solid rgba(255,255,255,.4);
+    }
+    .column{
+        margin-top: 0.3125rem;
+        margin-bottom: 0.3125rem;
+        float: left;
+        font-size: 0.5rem;
+        text-align: center;
+        color: #fff;
+    }
+    .ordinal{
+        width: 2.5rem;
+    }
+    .team_name{
+        width: 4.8rem;
+    }
+    .metal{
+        width: 2.5rem;
+    }
+    #page{
+    	background: url('./background.png') center fixed;
+ 		background-size: cover;
+    }
+    #header{
+/*        display: table-cell;
+        vertical-align:middle;*/
+    	height: 1.375rem;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(11,11,11,.9);
+    }
+/*    #header img{
+        vertical-align:middle;
+    }*/
+    #xjtu_logo{
+        float: left;
+        margin-top: 0.125rem;
+        margin-left: 12%;
+    }
+    #eeyes_logo{
+        float: right;
+        margin-top: 0.234375rem;
+        margin-right: 15%;
+    }
+/*    #logo{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        margin-left: -3.5rem;
+        margin-top: -0.5625rem;
+        margin: 0 auto;
+        width: 7.0rem;
+        height: 1.125rem;
+        background-image: url('./logo.png');
+        background-repeat: no-repeat;
+    }*/
+    #xjtu_logo{
+        width: 3.84375rem;
+
+    }
+    #eeyes_logo{
+        width: 2.28125rem;
+    }
+    #section{
+        margin-top: 0.625rem;
+        margin-bottom: 0.625rem;
+    }
+    #date{
+        float: left;
+    }
+    #half{
+        float: left;
+    }
+    .day{
+        height: 2.265625rem;
+        width: 1.21875rem;
+        text-align: center;
+        line-height: 2.265625rem;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    #d14{
+        background-color: rgba(0,0,0,.7);
+    }
+    #d15{
+        background-color: rgba(0,0,0,.3);
+    }
+    .morning{
+        margin-top: 0.3125rem;
+        margin-left: 0.625rem;
+/*        margin-bottom: 0.234375rem;*/
+        padding-left: 0.3125rem;
+        height: 1.71875rem;
+        width: 7.1875rem;
+        background-color: rgba(0,0,0,.5); 
+        line-height: 1.71875rem;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    .afternoon{
+        margin-top: 0.46875rem;
+        margin-left: 0.625rem;
+        padding-left: 0.3125rem;
+        height: 1.71875rem;
+        width: 7.1875rem;
+        background-color: rgba(0,0,0,.5); 
+        line-height: 1.71875rem;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    .m_15{
+        display: none;
+    }
+    .morning:before{
+/*        position: relative;
+        top: -0.046875rem;*/
+        margin: 0.046875rem;
+        content: ' ';
+        display: inline-block;
+        height: 0.25rem;
+        width: 0.25rem;
+        background-color: #fff;
+        border-radius: 0.125rem;
+    }
+    .afternoon:before{
+/*        position: relative;
+        top: -0.046875rem;*/
+        margin: 0.046875rem;
+        content: ' ';
+        display: inline-block;
+        height: 0.25rem;
+        width: 0.25rem;
+        background-color: #fff;
+        border-radius: 0.125rem;
+    }
+    #news{
+        margin-bottom: 0.625rem;
+    }
+    #newslist li{
+      /*  margin-left: 10%;*/
+        border-bottom: 0.03125rem solid rgba(255,255,255,.4);
+    }
+    #newslist p{
+    }
+    #rankinglist{
+        margin-bottom: 0.625rem;
+    }
+    #column{
+        border-bottom: 0.03125rem solid rgba(255,255,255,.4);
+    }
+    #ranking_list li{
+        border-bottom: 0.03125rem solid rgba(255,255,255,.4);
+    }
+    #teamname{
+        border-left: 0.03125rem solid rgba(255,255,255,.5);
+        border-right: 0.03125rem solid rgba(255,255,255,.5);
+    }
+/*    #search_team{
+        font-size: 0.5rem;
+        margin: 0.625rem auto;
+        width: 8.75rem;
+        height: 1.125rem;
+        border: 0.0625rem solid rgba(255,255,255,.4);
+    }*/
+    #enter_h5{
+            margin: 0.625rem auto;
+            font-size: 0.5rem;
+            width: 8.75rem;
+            height: 1.0rem;
+            line-height: 1.0rem;
+            text-align: center;
+            background-color: rgba(255,255,255,.6);
+            border: 0.0625rem solid rgba(0,0,0,.6);
+    }
+    #more{
+        text-align: center;
+        margin-top: 0.3125rem;
+        margin-bottom: 0.3125rem;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+    #newsviewport{
+        display: none;
+        position: fixed;
+        height: 15.625rem;
+        width: 8.75rem;
+        top: 1rem;
+        left: 0.625rem;
+        background-color: rgba(255,255,255,.8);
+    }
+    #footer{
+        height: 0.703125rem;
+        font-size: 0.4375rem;
+    	text-align: center;
+    	color: #e5e5e5;
+    }

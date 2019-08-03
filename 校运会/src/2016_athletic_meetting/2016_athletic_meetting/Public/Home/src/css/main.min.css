@@ -1,0 +1,459 @@
+@charset 'UTF-8';
+*{
+    margin: 0;padding: 0;
+}
+
+body
+{
+    height: 100%;
+    font-family: '微软雅黑';
+    font-size: 24px;
+}.container-index
+{
+    height: 100%;
+
+    background: url(../img/bg.jpg);
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+}.form
+{
+    position: relative;
+    top: 40%;
+}.icon-caret-down
+{
+    font-size: 1.6em;
+
+    padding-right: .5em;
+
+    color: rgba(255,255,255,.5);
+    border-right: 1px solid rgba(255,255,255,.5);
+}.options
+{
+    display: none;
+    padding-right: 0;
+    color: #222;
+}.options .list-group-item:first-child,
+.options .list-group-item:last-child
+{
+    border-radius: 0;
+}.options .selected
+{
+    background: #ccc;
+}
+.options:hover{
+    background: #ccc;
+}
+
+
+.option
+{
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #f5f5f5;
+}.btn-default
+{
+    border-radius: 0;
+}.btn
+{
+    border: none;
+}.select
+{
+    color: #fff;
+    background: rgba(255,255,255,.3);
+}.login
+{
+    color: #7c7c7c;
+}.bg
+{
+    position: fixed;
+    z-index: -1;
+
+    width: 10rem;
+    height: 17.75rem;
+}header
+{
+    height: 1.5rem;
+    background: rgba(0,0,0,.5);
+}
+header img{
+    height: 1rem;
+    margin: 0.25rem 0.5rem 0.25rem;
+    line-height: 1.5rem;
+}
+header img.left-img
+{
+    margin-left: 1rem;
+}.nav-container
+{
+    position: absolute;
+    bottom: 0;
+
+    width: 10rem;
+    padding: 0;
+
+    color: #fff;
+}.nav-container a
+{
+    position: relative;
+    top: 25%;
+
+    display: block;
+
+    color: #fff;
+}nav .col-xs-6
+{
+    height: 5rem;
+    padding: 2px;
+
+    background: rgba(0,0,0,.5);
+    -webkit-background-clip: content-box;
+       -moz-background-clip: content-box;
+            background-clip: content-box;
+}
+
+nav .text-center .center-block{
+    margin-bottom: 10px;
+}
+
+
+nav div a
+{
+    color: #fff;
+}
+nav.nav-container div a img{
+    height: 2.2rem;
+    width: 4.3rem;
+    display: block;
+    margin: 0 0.2rem;
+}
+
+.list
+{
+    position: relative;
+    top: 16.5rem;
+
+    color: #cfd6e6;
+}.table
+{
+    font-size: 1.2em;
+
+    min-height: 17.75rem;
+}
+
+
+.table tr
+{
+    line-height: 1.42rem;
+
+    height: 1.42rem;
+}.table tbody tr td
+{
+    line-height: 1.42rem;
+
+    height: 1.42rem;
+
+    border-top: none;
+    border-bottom: 1px solid #898989;
+}.table tbody tr td img
+{
+    width: 1em;
+    height: 1em;
+}.images
+{
+    position: relative;
+    top: 17.75rem;
+    padding: 0 10px;
+
+    width: 100%;
+}.messages
+{
+    position: relative;
+    top: 19.525rem;
+
+    color: #fff;
+}.messages .message-time
+{
+    float: left;
+
+    width: 1.2rem;
+    height: 100%;
+
+    background: rgba(0,0,0,.8);
+}.messages .message-content
+{
+    float: right;
+
+    width: 7.8rem;
+    min-height: 100px;
+
+    margin-top: .1rem;
+    margin-right: .5rem;
+
+    border-left: 4px solid rgba(0,0,0,.5);
+}.messages .message-content:before
+{
+    position: absolute;
+    left: 1.554rem;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+    margin-top: 32px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: rgba(0,0,0,.5);
+}.messages .message-content .content
+{
+    margin-left: .5rem;
+    padding: 30px 40px;
+
+    border-radius: 8px;
+    background: rgba(0,0,0,.5);
+}.messages .message-content .content:before
+{
+    position: absolute;
+    left: 2rem;
+
+    display: block;
+
+    width: 0;
+    height: 0;
+
+    content: '';
+
+    border-top: 10px solid transparent;
+    border-right: 12px solid rgba(0,0,0,.5);
+    border-bottom: 10px solid transparent;
+}.messages .message-content time
+{
+    display: block;
+
+    margin-bottom: 10px;
+}.messages .message-content time:before
+{
+    position: absolute;
+    left: 2.5rem;
+
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    content: '';
+
+    border-radius: 50%;
+    background: #fff;
+}.comments
+{
+    position: relative;
+    top: 21.3rem;
+    border-bottom: 1px solid #898989;
+
+}.comments .list-group-item
+{
+    color: #bfbfbf;
+    font-size: 1.4em;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-bottom: 1px solid #898989;
+    background: rgba(0,0,0,.5);
+}footer
+{
+    /*position: absolute;*/
+    /*top: 21.3rem;*/
+
+    /*bottom: -1.42rem;*/
+    transition:top 0.3s linear;
+    width: 10rem;
+    margin: 0;
+}footer li
+{
+    height: 1.42rem;
+    padding: 5px;
+
+    background: #f3f2f1;
+}footer li a
+{
+    line-height: 1.2425rem;
+
+    display: block;
+
+    color: #b7b2b4;
+    /*border-right: 1px solid #b7b2b4;*/
+}footer li:last-child a
+{
+    border: none;
+}
+
+/*排行榜 补充css*/
+.list #omit-td img{
+    width: 0.25rem;
+    height: 0.25rem;
+    margin:0 0.18rem;
+}
+
+.list #more-rank{
+    cursor: pointer;
+}
+
+
+/*简报 补充css*/
+.messages #aside-content{
+    float: left;
+}
+.messages #second-day{
+    clear:left;
+}
+.messages #section-content{
+    width: 7.8rem;
+    float: right;
+}
+
+.messages #aside-content .selected{
+    background-color: rgba(0,0,0,0.3);
+}
+
+#takeup-space {
+    top: 21rem;
+    position: relative;
+    /*bottom: 0;*/
+    height: 1.42rem;
+
+    width: 10rem;
+    margin: 0;
+}
+
+.message-content .detail{
+    display: none;
+}
+
+footer .list-inline .selected a{
+    color:#000;
+}
+
+/*保持在上面*/
+footer.fix{
+    position:fixed;
+    top:0;
+}
+
+/*在原始位置*/
+footer.move{
+    position: absolute;
+    bottom:-1.42rem;
+}
+
+/*在文档上方且被隐藏*/
+footer.move-top{
+    position: fixed;
+    top:-1.42rem;
+}
+
+#passageDetail{
+    position: fixed;
+    top: 0.7rem;
+    left:0.5rem;
+
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    background: rgba(255,255,255,0.8);
+    color: #000;
+
+    overflow: visible;
+
+    height: 16rem;
+    width:  9rem;
+
+    display: none;
+}
+
+#passageDetail #passageDetailContent{
+    height: 16rem;
+    overflow: auto;
+}
+
+#passageDetail h3,#passageDetail h2,#passageDetail h1{
+    font-weight: bolder;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+#passageDetail p{
+    text-indent: 2em;
+}
+
+#passageDetail img{
+    width: 7rem;
+    margin: 0 auto;
+    display: block;
+}
+
+#passageDetail #passageClose{
+    position: fixed;
+    width: 1.75rem;
+    height: 1.75rem;
+    right: -0.3rem;
+    top: -0.1rem;
+    padding: 0.5rem;
+}
+
+
+/*以下：向插件开炮！*/
+.legend table{
+    display: block;
+    color: #fff;
+    padding: 0.1rem;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.legend>div{
+    display: none;
+}
+.legend tbody .legendColorBox{
+    display: inline-block;
+    margin: 0 0.05rem 0.05rem 0.05rem;
+}
+
+
+#myDorP{
+    color: #fff;
+    width: 5rem;
+    margin: 23em auto 0 auto;
+}
+
+#myDorLine{
+    margin: 310px auto 0 auto;
+    color: #fff;
+    width: 5rem;
+}
+
+#myDorSpan, #myDorLineSpan{
+    margin-left: 0.5rem;
+}
+
+#more-passage{
+    height: 1rem;
+    width: 3.66rem;
+    margin: 0 auto;
+}
+#more-passage img{
+    width: 0.25rem;
+    height: 0.25rem;
+    margin: 0.35rem 0.18rem;
+}
+
+.legend{
+    display: none;
+}
+
+#placeholder{
+    width: 5rem;
+    height: 5rem;
+}
+#think_page_trace_open{display:none}
+.options{
+    height: 37rem;
+    overflow-y: scroll;
+}

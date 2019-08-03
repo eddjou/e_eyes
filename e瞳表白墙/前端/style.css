@@ -1,0 +1,154 @@
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Arial,sans-serif;
+    }
+    body{
+    	height: 17.786667rem;
+    	background-color: rgb(202,213,217);
+    }
+    .header{
+    	color: white;
+    	font-size: 0.453333rem;
+    	background-color: rgb(114,153,168);
+    	height: 1.066667rem;
+    }
+    .denglu{
+    	float: left;
+    	position: relative;
+    	left: 0.4rem;
+    	height: 1.066667rem;
+      	line-height: 1.066667rem;
+    }
+    .biaoti{
+    	text-align: center;
+    	max-width: 2.08rem;
+    	margin: 0 auto;
+    	height: 1.066667rem;
+    	line-height: 1.066667rem;
+    }
+    .zhuce{
+    	float: right;
+    	position: relative;
+    	right: 0.4rem;
+    	height: 1.066667rem;
+      	line-height: 1.066667rem;
+    }
+    .nav{
+    	height: 1.066667rem;
+    	background-color: rgb(170,185,190);
+    	position: relative;
+    }
+    .week{
+    	position: absolute;
+    	top: 50%;
+		left: 50%;
+		height: 50%;
+		width: 50%;
+		margin: -10% 0 0 -25%;
+	   /*	height: 0.826667rem;
+    	line-height: 0.826667rem;
+    	max-width: 6.826667rem;*/
+   		border: 0.026667rem solid #666666;
+    	border-radius: 0.133333rem;
+    	background-color: rgb(202,213,217);
+    	text-align: center;
+    }
+    .angleleft{
+    	float: left;
+    	position: relative;
+    	left: 0.4rem;
+    }
+    .angleright{
+    	float: right;
+    	position: relative;
+    	right: 0.4rem;
+    }
+    .gap{
+    	height: .6rem;
+    }
+    .gap2{
+    	height: 0.266667rem;
+    }
+    .biaobai{
+    	border-bottom: 0.026667rem solid #a7bdc2;
+    	font-size: 0.373333rem;
+    	background-color: rgb(230,239,243);
+    	margin: 0.186667rem 0;
+    	padding:0.373333rem 0.306667rem 0.24rem 0.453333rem;
+    }
+    .namesplit{
+    	margin: 0.053333rem 0 0.08rem 0;
+    	width: 2.56rem;
+    	height: 1px;
+    	background-color: #cad6da;
+    }
+    .detailsplit{
+    	margin: 0.16rem 0 0 0.4rem;
+    	width: 8.933333rem;
+    	height: 1px;
+    	background-color: #cad6da;
+    }
+    .name{
+    	color: rgb(96,101,107);
+    }
+   	.commentspan{
+   		display: inline-block;
+   		background-color: rgb(200,10,10);
+   	}
+   	.lovespan{
+   		display: inline-block;
+   		background-color: rgb(10,200,10);
+   	}
+   	.img{
+   		display: inline-block;
+   	}
+   	.num{
+   		display: inline-block;
+   	}
+   	.woyaobiaobai{
+   		position: fixed;
+   		bottom: 0;
+   		left: 0;
+   		width: 100%;
+   		height: 1.2rem;
+   		line-height: 1.2rem;
+   		text-align: center;
+   		font-size: 0.453333rem;
+   		color: white;
+   		background-color:rgb(85,128,162); 
+   		text-align: center;
+   	}
+   	.return{
+    	float: left;
+    	position: relative;
+    	left: 0.4rem;
+    	height: 1.066667rem;
+      	line-height: 1.066667rem;
+    }
+    .release{
+    	float: right;
+    	position: relative;
+    	right: 0.4rem;
+    	height: 1.066667rem;
+      	line-height: 1.066667rem;
+    }
+    .container{
+    	font-size: 0.373333rem;
+    	color: rgb(166,166,166);
+    	margin: 0.746667rem 0 0 0;
+    	padding: 0.533333rem 0.666667rem;
+    	height:6.053333rem;
+    	background-color: rgb(242,251,253);
+    }
+    .commentspace{
+    	position: fixed;
+   		bottom: 0;
+   		left: 0;
+   		width: 100%;
+   		height: 1.28rem;
+   		background-color: #dee2e4;
+    }
+    .commenthere{
+
+    }
